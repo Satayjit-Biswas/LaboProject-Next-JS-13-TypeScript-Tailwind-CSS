@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BiSearchAlt, BiUser } from "react-icons/bi";
 import { FiHeart } from "react-icons/fi";
 import { HiOutlineShoppingBag } from "react-icons/hi";
@@ -5,7 +6,9 @@ const HeaderMain = () => {
 	return (
 		<div className="border-b border-gray-200 py-6">
 			<div className="container sm:flex justify-between items-center">
-				<div className="logo text-center">Logo</div>
+				<div className="logo text-center">
+					<Link href="#">LOGO</Link>
+				</div>
 				<div className="w-full sm:w-[300px] md:w-[70%] relative">
 					<input
 						className="border-gray-200 border p-2 px-4 rounded-md w-full"
