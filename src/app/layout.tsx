@@ -1,10 +1,13 @@
 import HeaderMain from "@/components/HeaderMain";
 import HeaderTop from "@/components/HeaderTop";
+import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,6 +26,7 @@ export default function RootLayout({
 				<HeaderTop></HeaderTop>
 				<HeaderMain></HeaderMain>
 				<Navbar></Navbar>
+				<Hero></Hero>
 				{children}
 			</body>
 		</html>

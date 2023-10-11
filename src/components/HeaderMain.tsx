@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { BiSearchAlt, BiUser } from "react-icons/bi";
 import { FiHeart } from "react-icons/fi";
@@ -7,7 +8,15 @@ const HeaderMain = () => {
 		<div className="border-b border-gray-200 py-6">
 			<div className="container sm:flex justify-between items-center">
 				<div className="logo text-center">
-					<Link href="#">LOGO</Link>
+					<Link href="#">
+						<Image
+							className="w-[40%] h-[100px] md:h-auto rounded-xl object-cover object-right md:object-left-bottom"
+							src="/logo.png"
+							alt="banner"
+							width={200}
+							height={200}
+						/>
+					</Link>
 				</div>
 				<div className="w-full sm:w-[300px] md:w-[70%] relative">
 					<input
