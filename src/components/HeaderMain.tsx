@@ -29,15 +29,15 @@ const HeaderMain = () => {
 					/>
 				</div>
 				<div className="hidden lg:flex gap-4 text-gray-500 text-[30px]">
-					<BiUser />
+					<BiUser className="cursor-pointer" />
 					<div className="relative">
-						<FiHeart />
+						<FiHeart className="cursor-pointer" />
 						<div className="bg-red-600 rounded-full absolute top-[-5px] right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 translate-y-1">
 							0
 						</div>
 					</div>
 					<div className="relative">
-						<HiOutlineShoppingBag />
+						<HiOutlineShoppingBag className="cursor-pointer" />
 						<div className="bg-red-600 rounded-full absolute top-[-5px] right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 translate-y-1">
 							2
 						</div>
