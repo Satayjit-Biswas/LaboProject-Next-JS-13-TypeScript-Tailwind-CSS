@@ -7,14 +7,14 @@ const HeaderMain = () => {
 	return (
 		<div className="border-b border-gray-200 py-6">
 			<div className="container sm:flex justify-between items-center">
-				<div className="logo text-center">
+				<div className="logo w-[120px] text-center">
 					<Link href="#">
 						<Image
-							className="w-[40%] h-[100px] md:h-auto rounded-xl object-cover object-right md:object-left-bottom"
+							className="w-[100%] md:h-auto rounded-xl object-cover object-right md:object-left-bottom"
 							src="/logo.png"
 							alt="banner"
-							width={200}
-							height={200}
+							width={350}
+							height={350}
 						/>
 					</Link>
 				</div>
@@ -28,7 +28,7 @@ const HeaderMain = () => {
 						size={20}
 					/>
 				</div>
-				<div className="hidden lg:flex gap-4 text-gray-500 text-[30px]">
+				<div className="w-[120px] hidden lg:flex gap-4 text-gray-500 text-[30px]">
 					<BiUser className="cursor-pointer" />
 					<div className="relative">
 						<FiHeart className="cursor-pointer" />
